@@ -1,0 +1,22 @@
+{
+  "name": "olli-basicmap-backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "PORT=3001 node ./bin/www"
+  },
+  "dependencies": {
+    "axios": "^0.17.0",
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "dotenv": "^4.0.0",
+    "express": "~4.15.5",
+    "jade": "~1.11.0",
+    "lodash": "^4.17.4",
+    "morgan": "~1.9.0",
+    "serve-favicon": "~2.4.5",
+    "twilio": "^3.10.1",
+    "watson-developer-cloud": "^2.42.0"
+  }
+}
