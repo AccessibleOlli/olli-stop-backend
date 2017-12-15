@@ -1,0 +1,10 @@
+applications:
+- path: .
+  buildpack: sdk-for-nodejs
+  no-route: false
+  memory: 128M
+  instances: 1
+  domain: mybluemix.net
+  name: olli-stop-backend
+  host: olli-stop-backend
+disk_quota: 256M
