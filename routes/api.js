@@ -74,4 +74,12 @@ router.post('/text', (req, res, next) => {
     });
 });
 
+router.post('/kintrans', (req, res, next) => {
+  let websocketMgr = req.app.get('websocketMgr');
+  websocketMgr.sendMessageToClients({type: 'kintrans', body: req.body});
+  res.json({
+    ok: true
+  });
+});
+
 module.exports = router;
