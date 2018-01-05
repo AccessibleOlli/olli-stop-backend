@@ -12,7 +12,10 @@
 3. Install node modules
   - `cd olli-stop-backend`
   - `npm install`
-4. Copy the `.env.template` file to `.env` (`cp .env.template .env`). The file should look similar to the following:
+4. Copy the `.env.template` file to `.env`
+  - `cp .env.template .env`
+  
+The file should look similar to the following:
 
 ```
 TWILIO_ACCOUNT_SID=
