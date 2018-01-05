@@ -5,8 +5,8 @@ const watson_tokens = require('../services/watson_tokens');
 const watson_tts = require('../services/watson_tts');
 
 var config = {
-  'username': process.env.WATSON_SPEECH_TO_TEXT_USERNAME,
-  'password': process.env.WATSON_SPEECH_TO_TEXT_PASSWORD
+  username: process.env.WATSON_SPEECH_TO_TEXT_USERNAME,
+  password: process.env.WATSON_SPEECH_TO_TEXT_PASSWORD
 };
 var router = express.Router();
 

@@ -1,10 +1,13 @@
 const _ = require('lodash');
-const conversationConfig = {
-  'username': process.env.WATSON_TEXT_TO_SPEECH_USERNAME,
-  'password': process.env.WATSON_TEXT_TO_SPEECH_PASSWORD
+const config = {
+  username: process.env.WATSON_TEXT_TO_SPEECH_USERNAME,
+  password: process.env.WATSON_TEXT_TO_SPEECH_PASSWORD
 };
 const TextToSpeech = require('watson-developer-cloud/text-to-speech/v1');
-const textToSpeech = new TextToSpeech(conversationConfig);
+const textToSpeech = undefined;
+if (config.username) {
+  textToSpeech = new TextToSpeech(config);
+} 
 
 module.exports = {
   
