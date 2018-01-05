@@ -4,7 +4,7 @@ const config = {
   password: process.env.WATSON_TEXT_TO_SPEECH_PASSWORD
 };
 const TextToSpeech = require('watson-developer-cloud/text-to-speech/v1');
-const textToSpeech = undefined;
+let textToSpeech = undefined;
 if (config.username) {
   textToSpeech = new TextToSpeech(config);
 } 

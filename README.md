@@ -18,6 +18,7 @@
 The file should look similar to the following:
 
 ```
+PORT=44000
 TWILIO_ACCOUNT_SID=
 TWILIO_AUTH_TOKEN=
 TWILIO_PHONE_NUMBER=
@@ -25,10 +26,8 @@ WATSON_ASSISTANT_API_KEY=
 WATSON_ASSISTANT_SKILL_SET=olli-ces-prod
 ```
 
-5. In `.env` specify your twilio credentials and watson assistant api key
+5. In `.env` specify your twilio credentials and watson assistant api key. If you change the port you must change the proxy configuration in olli-stop.
 
 ## Running
 
-1. `PORT=44000 npm start`
-
-Note: If you change the port you must change the proxy configuration in olli-stop to point to a different port.
+1. `npm start`
