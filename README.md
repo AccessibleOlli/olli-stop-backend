@@ -22,6 +22,7 @@ TWILIO_ACCOUNT_SID=
 TWILIO_AUTH_TOKEN=
 TWILIO_PHONE_NUMBER=
 WATSON_ASSISTANT_API_KEY=
+WATSON_ASSISTANT_SKILL_SET=olli-ces-prod
 ```
 
 5. In `.env` specify your twilio credentials and watson assistant api key
