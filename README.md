@@ -28,6 +28,6 @@ WATSON_ASSISTANT_API_KEY=
 
 ## Running
 
-1. `PORT=44001 npm start`
+1. `PORT=44000 npm start`
 
 Note: If you change the port you must change the proxy configuration in olli-stop to point to a different port.
