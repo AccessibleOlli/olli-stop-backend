@@ -9,6 +9,7 @@ require('dotenv').config();
 
 const api = require('./routes/api');
 const index = require('./routes/index');
+const kintrans = require('./routes/kintrans');
 
 const appEnv = cfenv.getAppEnv();
 const app = express();
@@ -27,6 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/api', api);
+app.use('/kintrans', kintrans);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
