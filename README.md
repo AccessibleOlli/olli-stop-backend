@@ -2,6 +2,8 @@
 
 ## Overview
 
+This middleware allows web clients to interface with a Watson Assistant conversation service, a Twillio messaging service, and a Kintrans sign language interpretation service. 
+
 ## Installing
 
 1. Install [Node](https://nodejs.org)
